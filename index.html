@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HLDC: Materials Management System Technical Documentation Page</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="technical.css">
+</head>
+<body>
+  
+
+  <main id="main-doc">
+	<section class="main-section" id="Introduction">
+	  <header><h1>Introduction</h1></header>
+	  <p>The Hidalgo Land Development Corporation Materials Management System is a web application that incorporates the client's
+	  manual business processes, and automates it, while streamlining the business processes. The web application addresses the
+	  issues that the company had with data duplication through the use of Excel spreadsheets, and standardized the company's data
+	  to have everything kept in a centralized database. The materials management system consists of four modules:</p>
+	  <ul>
+	    <li><h2>Inventory Management</h2></li>
+	    <li><h2>Reports Generation</h2></li>
+	    <li><h2>Orders</h2></li>
+	    <li><h2>Requisition</h2></li>
+	  </ul>
+	</section>	
+
+	<section class="main-section" id="Instructions_for_Demo">
+	  <header><h1>Instructions for Demo</h1></header>
+	  <ol>
+	    <li>Clone/Download folder off of github repository:</li>
+	    <a class="main-links" href="https://github.com/paupaugoz/Hidalgofinal">HLDC Materials Management System</a>
+	    <li>Download and install Node.js from:</li>
+	    <a class="main-links" href="https://nodejs.org/en/">NodeJS</a>
+	    <li>Download and install MySQL</li>
+	    <a class="main-links" href="https://dev.mysql.com/downloads/mysql/">MySQL</a>	 
+	      <li>Open the .env file in a text editor, and configure <code>db_user, db_root, and db_url</code> to the settings set in your MySQL</li>			
+	    <li>Open <code>command prompt</code> and go into the directory downloaded from Github</li>			 
+	    <li>Type <code>npm install</code></li> 	   
+	      <li>Type  <code>npm start</code> to launch the web application</li>
+	     
+	    <li>Type in <code>localhost:3000</code> and enter credentials located in database.js</li>
+		
+	  </ol>
+	</section>
+		
+	<section class="main-section" id="Technical_Stack_Used">
+	  <header><h1>Technical Stack Used</h1></header>
+	  <ul>
+	  	<li><h3>Front end templating engine: Handlebars.js</h3></li>
+	  	<li><h3>Web application framework: Express.js</h3></li>
+	  	<li><h3>JavaScript runtime environment: Node.js</h3></li>
+	  	<li><h3>Database: MySQL</h3></li>
+	  </ul>
+	</section>
+	
+	<section class="main-section" id="Key_Concepts">
+	  <header><h1>Key Concepts</h1></header>
+	  <ul>
+	  	<li><h3>Project</h3></li>
+	  	<p class="indent">A project is referred to as the overall cluster of work. A project in HLDC's terms is a whole neighborhood being constructed.</p>
+	  	<li><h3>Unit</li>
+	  	<p class="indent"> A unit is referred to as the individual units, or houses in a given project. A house within a neighborhood</p>
+	  	<li><h3>Purchase Orders</h3></li>
+	  	<p class="indent">Purchase orders are forms that list down the list of materials needed by the engineers to 
+	  	purchase for inventory fulfillment</p>
+	  	<li><h3>Requisition Forms</h3></li>
+	  	<p class="indent">Requisition forms are forms made by the encoder that list down the materials needed by a project which is delivered
+	  	from the warehouse to the project site.</p>
+	  	<li><h3>Templates</h3></li>
+	  	<p class="indent">Templates are made by management as a way to gauge budget by creating a house unit with a pre-set list of materials required to build it.</p>
+	  	<li><h3>Bill of Materials</h3></li>
+	  	<p class="indent">The bill of materials is the actual list of materials purchased for a given unit, and project.</p>
+	  	<li><h3>Reports Generation</h3></li>
+	  	<p class="indent">Generation of reports summarize purchase order data, as well as project data to give a summarized report of the projects,
+	  	and purchase orders.</p>
+	  </ul>
+	</section>
+	
+	<section class="main-section" id="User_Roles">
+	  <header><h1>User Roles</h1></header>
+	  <ul>
+	  	<li><h3>Management</h3></li>
+	  	<p class="indent">Management is in charge of general administrative matters, such as employee access controls, reviewing of purchase orders,
+	  	creation of new projects, and templates, creation of materials, and generation of reports</p>
+	  	<li><h3>Engineer</h3></li>
+	  	<p class="indent">Engineer is responsible for looking over purchase orders, reviewing project status, and generating reports.</p>
+	  	<li><h3>Warehouse</h3></li>
+	  	<p class="indent">Warehouse personnel are in charged of keeping track of inventory in the system, as well as viewing purchase orders and requisition forms
+	  	</p>
+	  	<li><h3>Encoder</li></h3>
+	  	<p class="indent">Encoder is responsible for encoding purchase order data, new materials, and creating new requisition forms.</p>					
+	  </ul>
+	</section>
+</main>
+
+<nav id="navbar">
+  	<header>HLDC Materials Management System Technical Documentation Page</header>
+    <ul>
+      <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+      <a class="nav-link" href="#Instructions_for_Demo" rel="internal"><li>Instructions for Demo</li></a>
+      <a class="nav-link" href="#Technical_Stack_Used" rel="internal"><li>Technical Stack Used</li></a>
+      <a class="nav-link" href="#Key_Concepts" rel="internal"><li>Key Concepts</li></a>
+      <a class="nav-link" href="#User_Roles" rel="internal"><li>User Roles</li></a>
+      
+    </ul>
+  </nav>
+
+</body>
+</html>

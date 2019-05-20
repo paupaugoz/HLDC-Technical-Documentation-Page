@@ -1,0 +1,172 @@
+:root {
+	--sidebar-gray: #151719; 
+	--blue: #2A7B88;
+	--dark-blue: #659DBD;
+	--sidebar-bg: #555555;
+};
+
+@media only screen and (max-width: 400px) {
+  #main-doc{
+    margin-left:-10px;
+    position: relative;
+  }
+  code{
+    margin-left:-20px;
+    width:100%;
+    padding:15px;
+    padding-left:10px;
+    padding-right:45px;
+    min-width:233px;
+  }
+}
+
+html,body {
+	 min-width:290px;
+	 color: #7C7C7C;
+	 font-family: "Lato ", sans-serif;
+	 letter-spacing: 0.05em;
+	 font-size: 14px;
+	 line-height: 1.42857143;
+	 scroll-behavior: smooth;
+
+}
+#main-doc {
+	position: relative;
+	width: 85%;
+	margin-left: 20%;
+	font-size: 16px;
+	
+}
+
+#main-doc header {
+	color: var(--blue);
+}
+
+#main-doc li {
+	margin: 20px 0px;
+}
+
+a:hover {
+	background: none;
+	color: inherit;
+}
+a:visited { text-decoration: none; color: none; }
+a:any-link {
+	text-decoration: none;
+	color: white;
+	}
+
+p {
+	
+	height: auto;
+	word-wrap: break-word;
+	width: 75%;
+}
+
+code {
+	border: 1px solid red;
+}
+
+#navbar{
+  position: fixed;
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:15%;
+  height:100%;
+ 
+  background-color: var(--sidebar-bg);
+ 
+  
+}
+
+
+
+#navbar header {
+  text-align: center;
+  border-bottom: 1px solid var(--sidebar-bg);
+  color: white;
+  opacity: 80%;
+  background-color: var(--blue);
+  padding: 20px 0px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#navbar ul {
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 0;
+
+}
+
+#navbar li{
+  border-bottom:1px solid;
+  font-size: 1.25rem;
+  padding:32px;
+  padding-left:45px;
+  list-style: none;
+  position:relative;
+  left:-16%;
+  width:100%;
+  height: 100%;
+}
+#navbar li:hover {
+	background-color: var(--blue);
+}
+.nav-link:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+.nav-link:hover{
+ background: none;
+ color: none;
+}
+
+.nav-link {
+	color: white;
+}
+
+section header  { 
+  border-bottom: 1px solid var(--blue);
+  width: 90%;
+  font-size: 1.5em;
+}
+
+
+.indent {
+	margin-left: 10px;
+}
+
+.highlight {
+
+}
+
+a.main-links {
+	color: #007bff;
+	font-size: 1.5rem;
+}
+
+
+
+code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;   
+    width: auto;
+    overflow: hidden;
+    padding: .5em 1.5em;
+    padding-bottom: 0;
+    display: inline-block;
+    word-wrap: break-word;
+    position: relative;
+    bottom: -5px;
+}
+
+
+
